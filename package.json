@@ -1,0 +1,17 @@
+{
+  "name": "linkedhub",
+  "version": "1.0.0",
+  "description": "A tool to match LinkedIn skills with GitHub activities",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "linkedin",
+    "github"
+  ],
+  "author": "Bruno Genaro, Ianko Leite, Filipe Perina, Eduardo Damianik",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
