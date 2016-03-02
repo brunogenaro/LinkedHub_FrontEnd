@@ -1,4 +1,7 @@
 angular.module('LinkedHub').controller('DashboardController', function(Result, $scope) {
+    setTimeout(function() {
+        $('.main-holder').addClass('active');
+    }, 250);
     var linkedinObj  = Result.getResult().linkedin;
     var githubObj  = Result.getResult().github;
     var counts  = Result.getResult().counts;
