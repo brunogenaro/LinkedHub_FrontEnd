@@ -10,6 +10,11 @@ angular.module('LinkedHub').controller('DashboardController', function(Result, $
 
     $scope.languages = counts.languages;
 
+    $scope.followers = githubObj.followers;
+    $scope.following = githubObj.following;
+    $scope.repo = githubObj.public_repos;
+    $scope.gist = githubObj.public_gists;
+
     console.log('linkedinObj', linkedinObj);
     console.log('githubObj', githubObj);
     console.log('counts', counts);
