@@ -1,7 +1,12 @@
-<form>
-    <input type="text" placeholder="LinkedIn URL" class="form-control" ng-model="data.linkedin" />
+<form ng-controller="HomeController">
+    <div class="login-form">
+        <div class="form-group">
+            <input type="text" class="form-control linkedin-icon" ng-model="linkedin" placeholder="LinkedIn URL" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control github-icon" ng-model="github" placeholder="Github Username" />
+        </div>
 
-    <input type="text" placeholder="GitHub Username" class="form-control" ng-model="data.github" />
-
-    <input type="submit" class="btn btn-default" value="Retrieve Information" ng-click="getResults(data)">
+        <button class="btn btn-primary btn-block" ng-click="getResults(this)">Retrieve Information</button>
+    </div>
 </form>

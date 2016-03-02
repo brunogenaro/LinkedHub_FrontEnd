@@ -2,6 +2,8 @@ angular.module('LinkedHub').controller('DashboardController', function(Result, $
     var linkedinObj  = Result.getResult().linkedin;
     var githubObj  = Result.getResult().github;
 
-    console.log('linkedinObj', linkedinObj);
-    console.log('githubObj', githubObj);
+    $scope.name = linkedinObj.name;
+
+    console.log('linkedinObj', JSON.stringify(linkedinObj));
+    console.log('githubObj', JSON.stringify(githubObj));
 });
