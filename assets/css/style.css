@@ -321,13 +321,35 @@ body {
     background: rgba(255, 255, 255, 0.2); }
 
 .logo {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  -ms-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out; }
   .logo img {
     width: 400px; }
 
 .login-holder {
   margin-top: 100px;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  -ms-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out; }
+  .login-holder .form-group:nth-child(1) {
+    -webkit-transition: all 0.75s ease-out 0.25s;
+    -moz-transition: all 0.75s ease-out 0.25s;
+    -ms-transition: all 0.75s ease-out 0.25s;
+    -o-transition: all 0.75s ease-out 0.25s;
+    transition: all 0.75s ease-out 0.25s; }
+  .login-holder .form-group:nth-child(2) {
+    -webkit-transition: all 0.75s ease-out 0.5s;
+    -moz-transition: all 0.75s ease-out 0.5s;
+    -ms-transition: all 0.75s ease-out 0.5s;
+    -o-transition: all 0.75s ease-out 0.5s;
+    transition: all 0.75s ease-out 0.5s; }
   .login-holder .form-group input.form-control {
     height: 50px;
     padding-left: 60px;
@@ -339,6 +361,12 @@ body {
       background-image: url("../images/linkedin-icon.png"); }
     .login-holder .form-group input.form-control.github-icon {
       background-image: url("../images/github-icon.png"); }
+  .login-holder .btn-primary {
+    -webkit-transition: all 0.75s ease-out 0.75s;
+    -moz-transition: all 0.75s ease-out 0.75s;
+    -ms-transition: all 0.75s ease-out 0.75s;
+    -o-transition: all 0.75s ease-out 0.75s;
+    transition: all 0.75s ease-out 0.75s; }
 
 .main-holder {
   position: relative;
@@ -484,7 +512,13 @@ body {
     padding: 0;
     list-style: none; }
     .languages-holder ul.languages li {
-      position: relative; }
+      position: relative;
+      opacity: 0;
+      -moz-transform: translateX(40px);
+      -o-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+      -webkit-transform: translateX(40px);
+      transform: translateX(40px); }
       .languages-holder ul.languages li img {
         position: relative;
         top: 0;
@@ -565,6 +599,102 @@ body {
     -ms-transform: translateX(0px);
     -webkit-transform: translateX(0px);
     transform: translateX(0px); }
+  .main-holder.active .languages-holder ul.languages li {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+    .main-holder.active .languages-holder ul.languages li:nth-child(1) {
+      -webkit-transition: all 1s ease-out 1.25s;
+      -moz-transition: all 1s ease-out 1.25s;
+      -ms-transition: all 1s ease-out 1.25s;
+      -o-transition: all 1s ease-out 1.25s;
+      transition: all 1s ease-out 1.25s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(2) {
+      -webkit-transition: all 1s ease-out 1.35s;
+      -moz-transition: all 1s ease-out 1.35s;
+      -ms-transition: all 1s ease-out 1.35s;
+      -o-transition: all 1s ease-out 1.35s;
+      transition: all 1s ease-out 1.35s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(3) {
+      -webkit-transition: all 1s ease-out 1.45s;
+      -moz-transition: all 1s ease-out 1.45s;
+      -ms-transition: all 1s ease-out 1.45s;
+      -o-transition: all 1s ease-out 1.45s;
+      transition: all 1s ease-out 1.45s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(4) {
+      -webkit-transition: all 1s ease-out 1.55s;
+      -moz-transition: all 1s ease-out 1.55s;
+      -ms-transition: all 1s ease-out 1.55s;
+      -o-transition: all 1s ease-out 1.55s;
+      transition: all 1s ease-out 1.55s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(5) {
+      -webkit-transition: all 1s ease-out 1.65s;
+      -moz-transition: all 1s ease-out 1.65s;
+      -ms-transition: all 1s ease-out 1.65s;
+      -o-transition: all 1s ease-out 1.65s;
+      transition: all 1s ease-out 1.65s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(6) {
+      -webkit-transition: all 1s ease-out 1.75s;
+      -moz-transition: all 1s ease-out 1.75s;
+      -ms-transition: all 1s ease-out 1.75s;
+      -o-transition: all 1s ease-out 1.75s;
+      transition: all 1s ease-out 1.75s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(7) {
+      -webkit-transition: all 1s ease-out 1.85s;
+      -moz-transition: all 1s ease-out 1.85s;
+      -ms-transition: all 1s ease-out 1.85s;
+      -o-transition: all 1s ease-out 1.85s;
+      transition: all 1s ease-out 1.85s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(8) {
+      -webkit-transition: all 1s ease-out 1.95s;
+      -moz-transition: all 1s ease-out 1.95s;
+      -ms-transition: all 1s ease-out 1.95s;
+      -o-transition: all 1s ease-out 1.95s;
+      transition: all 1s ease-out 1.95s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(9) {
+      -webkit-transition: all 1s ease-out 2.05s;
+      -moz-transition: all 1s ease-out 2.05s;
+      -ms-transition: all 1s ease-out 2.05s;
+      -o-transition: all 1s ease-out 2.05s;
+      transition: all 1s ease-out 2.05s; }
+    .main-holder.active .languages-holder ul.languages li:nth-child(10) {
+      -webkit-transition: all 1s ease-out 2.25s;
+      -moz-transition: all 1s ease-out 2.25s;
+      -ms-transition: all 1s ease-out 2.25s;
+      -o-transition: all 1s ease-out 2.25s;
+      transition: all 1s ease-out 2.25s; }
+
+.login-holder.active .logo {
+  opacity: 0;
+  -moz-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px); }
+.login-holder.active .form-group:nth-child(1) {
+  opacity: 0;
+  -moz-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px); }
+.login-holder.active .form-group:nth-child(2) {
+  opacity: 0;
+  -moz-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px); }
+.login-holder.active .btn-primary {
+  opacity: 0;
+  -moz-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px); }
 
 .loader {
   font-size: 90px;
