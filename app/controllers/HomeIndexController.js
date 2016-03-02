@@ -1,0 +1,1 @@
+angular.module('LinkedHub').controller('HomeIndexController', function() {});
