@@ -3,9 +3,11 @@ angular.module('LinkedHub').controller('HomeController', function(Request, Resul
     $scope.linkedin = 'https://www.linkedin.com/in/iankoleite';
     $scope.github = 'ianko';
 
-    $scope.submitingForm = true;
+    $scope.submitingForm = false;
 
     $scope.getResults = function(data) {
+        $scope.submitingForm = true;
+
         var payload = {
             linkedin: data.linkedin,
             github: data.github
