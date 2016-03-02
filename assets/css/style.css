@@ -298,10 +298,16 @@
 .p-r-50 {
   padding-right: 50px !important; }
 
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 body {
   background: #03AE8D;
   background-image: url("../images/background.jpg");
-  background-size: cover;
+  background-position: center top;
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .btn-primary {
@@ -336,9 +342,10 @@ body {
 
 .main-holder {
   position: relative;
-  padding-top: 200px;
   width: 100%;
   margin-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 30px;
   border-radius: 5px;
   background: #F5EAF9;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
@@ -347,34 +354,50 @@ body {
     top: -89px;
     width: 100%; }
     .main-holder .user-info .user-picture {
-      margin: 0 auto;
       overflow: hidden;
       width: 190px;
-      border-radius: 100%;
+      margin: 0 auto;
       margin-bottom: 5px;
       border: 6px solid #E35D1B;
+      border-radius: 100%;
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); }
       .main-holder .user-info .user-picture img {
         width: 178px; }
     .main-holder .user-info .user-name {
-      font-size: 26px;
+      text-align: center;
       color: #6A6A6A;
-      text-align: center; }
+      font-size: 26px; }
     .main-holder .user-info .user-sub {
       text-align: center;
-      font-style: italic;
-      color: #03AE8D; }
+      color: #03AE8D;
+      font-style: italic; }
 
 .languages-holder {
-  padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 20px;
+  padding-left: 40px; }
   .languages-holder ul.languages {
+    position: relative;
     padding: 0;
-    list-style: none;
-    position: relative; }
+    list-style: none; }
     .languages-holder ul.languages li {
+      position: relative;
       padding-left: 30px; }
       .languages-holder ul.languages li img {
         position: absolute;
-        top: 0;
-        left: 0; }
+        top: 0px;
+        left: 0;
+        width: 20px; }
+      .languages-holder ul.languages li .progress {
+        height: 20px;
+        border-radius: 100px;
+        background: #D8D8D8;
+        box-shadow: none; }
+        .languages-holder ul.languages li .progress .progress-bar {
+          min-width: 20px;
+          padding-top: 0px;
+          border: none;
+          border-radius: 9px 0px 0px 0px 9px;
+          background-image: -webkit-linear-gradient(left, #E56119 4%, #f9752d 97%);
+          background-image: -o-linear-gradient(left, #E56119 4%, #f9752d 97%);
+          background-image: linear-gradient(to right, #E56119 4%, #ff9d55 97%);
+          box-shadow: none; }
