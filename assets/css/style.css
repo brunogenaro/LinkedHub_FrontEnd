@@ -346,9 +346,21 @@ body {
   margin-top: 150px;
   padding-top: 200px;
   padding-bottom: 30px;
+  margin-bottom: 70px;
   border-radius: 5px;
   background: #F5EAF9;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -moz-transform: translateX(40px);
+  -o-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  -ms-transition: all 0.75s ease-out;
+  -o-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out; }
   .main-holder .user-info {
     position: absolute;
     top: -89px;
@@ -380,24 +392,45 @@ body {
     padding: 0;
     list-style: none; }
     .languages-holder ul.languages li {
-      position: relative;
-      padding-left: 30px; }
+      position: relative; }
       .languages-holder ul.languages li img {
-        position: absolute;
-        top: 0px;
+        position: relative;
+        top: 0;
         left: 0;
-        width: 20px; }
+        width: 15px; }
+      .languages-holder ul.languages li label {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 5px;
+        padding-right: 18px;
+        padding-left: 8px; }
       .languages-holder ul.languages li .progress {
         height: 20px;
+        margin-bottom: 20px;
         border-radius: 100px;
         background: #D8D8D8;
         box-shadow: none; }
         .languages-holder ul.languages li .progress .progress-bar {
           min-width: 20px;
           padding-top: 0px;
+          width: 0;
           border: none;
           border-radius: 9px 0px 0px 0px 9px;
           background-image: -webkit-linear-gradient(left, #E56119 4%, #f9752d 97%);
           background-image: -o-linear-gradient(left, #E56119 4%, #f9752d 97%);
           background-image: linear-gradient(to right, #E56119 4%, #ff9d55 97%);
-          box-shadow: none; }
+          box-shadow: none;
+          -webkit-transition: all 1s ease-out;
+          -moz-transition: all 1s ease-out;
+          -ms-transition: all 1s ease-out;
+          -o-transition: all 1s ease-out;
+          transition: all 1s ease-out; }
+
+.main-holder.active {
+  opacity: 1;
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px); }
