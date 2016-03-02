@@ -556,6 +556,7 @@ body {
       -o-transform: translateX(0px);
       -ms-transform: translateX(0px);
       -webkit-transform: translateX(0px);
+<<<<<<< Updated upstream
       transform: translateX(0px); }
   .main-holder.active .status-boxes .fork-box, .main-holder.active .status-boxes .repo-box, .main-holder.active .status-boxes .following-box, .main-holder.active .status-boxes .followers-box {
     opacity: 1;
@@ -618,3 +619,6 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff; } }
+=======
+      transform: translateX(0px); }
+>>>>>>> Stashed changes

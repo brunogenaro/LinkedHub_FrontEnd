@@ -1,9 +1,22 @@
 angular.module('LinkedHub').controller('DashboardController', function(Result, $scope) {
     var linkedinObj  = Result.getResult().linkedin;
     var githubObj  = Result.getResult().github;
+    var counts  = Result.getResult().counts;
 
     $scope.name = linkedinObj.name;
+    $scope.headline = linkedinObj.headline;
 
-    console.log('linkedinObj', JSON.stringify(linkedinObj));
-    console.log('githubObj', JSON.stringify(githubObj));
+    $scope.avatar = githubObj.avatar_url;
+
+    $scope.languages = counts.languages;
+
+    console.log('linkedinObj', linkedinObj);
+    console.log('githubObj', githubObj);
+    console.log('counts', counts);
+});
+
+angular.module('LinkedHub').filter('isBiggerThanZero', function() {
+    return function(p) {
+        return p > 0;
+    }
 });
