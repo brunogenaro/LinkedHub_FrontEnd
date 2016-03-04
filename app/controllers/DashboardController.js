@@ -2,7 +2,8 @@ angular.module('LinkedHub').controller('DashboardController', function(Result, $
 
     // Delay to create the animation
     setTimeout(function() {
-        document.getElementsByClassName('main-holder').className = 'active';
+        var element = document.getElementsByClassName('main-holder')[0];
+        element.className += " active";
     }, 250);
 
     var linkedinObj  = Result.getResult().linkedin;
